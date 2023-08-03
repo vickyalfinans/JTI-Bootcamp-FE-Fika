@@ -8,6 +8,7 @@
 </div>
 
 <div class="todo-list">
+    <div *ngFor="let todo of todos; let i = index">
     <div class="col-md-1">
         <input type="checkbox">
     </div>
@@ -19,6 +20,7 @@
     <div class="col btns">
         <input type="button" class="btn btn-default pull-left" value="Edit">
         <input type="button" class="btn btn-danger pull-right" value="Delete">
+    </div>
     </div>
 </div>
 
